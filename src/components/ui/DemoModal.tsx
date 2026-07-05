@@ -67,7 +67,7 @@ export function DemoModal({ isOpen, onClose }: DemoModalProps) {
                 
                 <h3 className="text-2xl font-bold mb-2">Guest Access</h3>
                 <p className="text-muted-foreground mb-8">
-                  Use the following credentials to access the Shinka Dynamics interactive demo environment.
+                  Use the following credentials to access the X-Manager interactive demo environment.
                 </p>
 
                 <div className="space-y-4 mb-8">

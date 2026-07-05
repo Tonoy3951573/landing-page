@@ -46,8 +46,8 @@ export function Features() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-bold mb-4"
           >
-            Everything you need to <br className="hidden md:block" />
-            <span className="text-gradient">rate employee behavior</span>
+            The only platform that can <br className="hidden md:block" />
+            <span className="text-gradient">empower your team</span>
           </motion.h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Powerful tools designed for enterprise operations to ensure consistent customer service quality.

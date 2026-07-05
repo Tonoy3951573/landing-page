@@ -16,7 +16,7 @@ export function Pricing() {
       name: "Business",
       desc: "For growing teams with multiple locations.",
       price: "$299",
-      features: ["Up to 25 cameras", "30-day video retention", "Advanced behavioral AI", "Priority support", "Custom alerts"],
+      features: ["Up to 25 cameras", "30-day video retention", "Advanced support AI", "Priority support", "Custom alerts"],
       popular: true
     },
     {

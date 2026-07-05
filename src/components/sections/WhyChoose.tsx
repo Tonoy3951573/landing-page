@@ -26,7 +26,7 @@ export function WhyChoose() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-bold mb-4"
           >
-            Why Choose <span className="text-gradient">Shinka Dynamics</span>
+            Why Choose <span className="text-gradient">X-Manager</span>
           </motion.h2>
         </div>
 

@@ -13,7 +13,7 @@ export function DashboardShowcase() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">Deep Insights into <span className="text-primary">Employee Behavior</span></h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">Deep Insights into <span className="text-primary">Team Performance</span></h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Our AI models break down interactions into measurable components like facial expressions, verbal tone, and policy compliance.
           </p>
@@ -44,7 +44,7 @@ export function DashboardShowcase() {
               <div className="flex justify-between items-start mb-6">
                 <div>
                   <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-1">Evaluation Criteria</div>
-                  <h3 className="text-xl font-bold text-white">Behavior scoring model</h3>
+                  <h3 className="text-xl font-bold text-white">Performance support model</h3>
                 </div>
                 <div className="px-3 py-1 rounded-full border border-white/5 bg-white/5 text-[10px] text-muted-foreground font-semibold">
                   WEIGHTED AI RUBRIC

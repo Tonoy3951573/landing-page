@@ -5,7 +5,7 @@ export function HowItWorks() {
   const steps = [
     { title: "Connect Camera", desc: "Link any RTSP or IP camera in seconds.", icon: Video },
     { title: "AI Analysis", desc: "Our models detect faces, expressions, and tone.", icon: Cpu },
-    { title: "Rate Behavior", desc: "Interactions are scored against your rubric.", icon: BarChart },
+    { title: "Evaluate Service", desc: "Interactions are scored against your rubric.", icon: BarChart },
     { title: "Improve Service", desc: "Identify top performers and at-risk staff.", icon: TrendingUp },
   ]
 

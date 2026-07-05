@@ -4,14 +4,14 @@ import { Card, CardContent } from "@/components/ui/Card"
 export function Testimonials() {
   const testimonials = [
     {
-      quote: "Shinka Dynamics completely transformed how we monitor our retail stores. The AI insights helped us optimize staffing during peak hours instantly.",
+      quote: "X-Manager completely transformed how we support our retail teams. The insights helped us assist our staff better and improve customer satisfaction.",
       author: "Sarah Jenkins",
       role: "VP of Operations",
       company: "Nordic Retail",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop"
     },
     {
-      quote: "We connected our existing 200+ cameras in under an hour. No hardware costs, just immediate value and incredibly accurate behavioral analytics.",
+      quote: "We connected our existing 200+ cameras in under an hour. No hardware costs, just immediate value and incredibly accurate service insights.",
       author: "David Chen",
       role: "Chief Security Officer",
       company: "Metro Logistics",

@@ -13,16 +13,16 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-secondary to-primary flex items-center justify-center">
-                <span className="font-bold text-white text-lg">S</span>
+              <div className="flex items-center justify-center">
+                <img src="/logo.png" alt="Shinka Dynamics Logo" className="h-10 w-auto object-contain" />
               </div>
               <span className="font-bold text-xl">Shinka Dynamics</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-sm">
-              The AI-powered video intelligence platform that transforms existing security cameras into smart business assistants.
+              The AI-powered video intelligence platform that transforms existing cameras into smart team support tools.
             </p>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
@@ -48,7 +48,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Shinka Dynamics Inc. All rights reserved.</p>
           <div className="flex gap-4">

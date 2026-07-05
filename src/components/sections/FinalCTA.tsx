@@ -26,7 +26,7 @@ export function FinalCTA({ onTryItOut }: FinalCTAProps) {
             Ready to Make Your Cameras <span className="text-gradient">Smarter?</span>
           </h2>
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto relative z-10">
-            Join hundreds of forward-thinking enterprises using Shinka Dynamics to unlock real-time physical intelligence.
+            Join hundreds of forward-thinking enterprises using X-Manager to unlock real-time team support insights.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">

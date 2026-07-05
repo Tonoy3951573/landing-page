@@ -24,7 +24,7 @@ export function AICapabilities() {
             viewport={{ once: true }}
             className="flex-1 text-left"
           >
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Advanced <span className="text-primary">Behavior Scoring</span></h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Advanced <span className="text-primary">Performance Analysis</span></h2>
             <p className="text-muted-foreground text-lg mb-8">
               Our proprietary computer vision and audio models are trained specifically to evaluate customer service interactions, scoring tone, facial expressions, and compliance automatically.
             </p>

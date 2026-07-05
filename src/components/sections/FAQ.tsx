@@ -6,7 +6,7 @@ export function FAQ() {
   const faqs = [
     {
       q: "What types of cameras are supported?",
-      a: "Shinka Dynamics is fully hardware-agnostic and works seamlessly with your existing infrastructure. We support all standard RTSP, ONVIF, and IP cameras, meaning you can plug our intelligence layer directly into the security system you already have."
+      a: "X-Manager is fully hardware-agnostic and works seamlessly with your existing infrastructure. We support all standard RTSP, ONVIF, and IP cameras, meaning you can plug our intelligence layer directly into the system you already have."
     },
     {
       q: "Do I need to buy new hardware?",
@@ -14,7 +14,7 @@ export function FAQ() {
     },
     {
       q: "How accurate is the AI detection?",
-      a: "Our advanced AI behavior models are highly accurate and process video feeds in real-time. By leveraging state-of-the-art computer vision and sentiment analysis, the system consistently and accurately tracks facial expressions, verbal tones, and greeting compliance to provide reliable, actionable insights for branch health."
+      a: "Our advanced AI support models are highly accurate and process video feeds in real-time. By leveraging state-of-the-art computer vision, the system helps you understand customer engagement, communication quality, and welcoming atmospheres to provide reliable insights for team support."
     },
     {
       q: "Is the video data secure?",

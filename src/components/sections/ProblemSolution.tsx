@@ -15,7 +15,7 @@ export function ProblemSolution() {
             className="text-3xl md:text-5xl font-bold mb-6"
           >
             Traditional cameras <span className="text-muted-foreground">only record.</span><br />
-            Shinka Dynamics <span className="text-gradient">understands.</span>
+            X-Manager <span className="text-gradient">understands.</span>
           </motion.h2>
         </div>
 
@@ -35,8 +35,8 @@ export function ProblemSolution() {
                   <VideoOff className="w-8 h-8 text-muted-foreground" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Passive Surveillance</h3>
-                  <p className="text-muted-foreground">Hours of useless footage. Requires constant manual monitoring. Reactive instead of proactive.</p>
+                  <h3 className="text-xl font-semibold mb-2">Standard Video Capture</h3>
+                  <p className="text-muted-foreground">Hours of unanalyzed footage. Requires constant manual review. Reactive instead of proactive.</p>
                 </div>
               </CardContent>
             </Card>
@@ -56,7 +56,7 @@ export function ProblemSolution() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-primary">Active Intelligence</h3>
-                  <p className="text-muted-foreground">Real-time alerts, behavioral analytics, and operational insights extracted automatically.</p>
+                  <p className="text-muted-foreground">Real-time support, service excellence insights, and operational understanding extracted automatically.</p>
                 </div>
               </CardContent>
             </Card>

@@ -46,7 +46,7 @@ export function Solutions() {
             viewport={{ once: true }}
             className="text-muted-foreground text-lg max-w-2xl mx-auto"
           >
-            Adapt our AI behavior models to fit the unique customer service standards of your business sector.
+            Adapt our AI support models to fit the unique customer service standards of your business sector.
           </motion.p>
         </div>
 
