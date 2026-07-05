@@ -40,7 +40,7 @@ function App() {
           
           <div className="flex items-center gap-4">
             <Button variant="glass" size="sm" onClick={() => setIsDemoModalOpen(true)}>
-              Try It Out
+              Client Log In
             </Button>
           </div>
         </div>
