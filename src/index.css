@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --background: 217 30% 8%; /* #0f141c */
+    --foreground: 210 40% 98%;
+
+    --card: 217 33% 14%; /* #182130 */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217 33% 14%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 163 56% 51%; /* #3ec6a0 */
+    --primary-foreground: 217 30% 8%;
+
+    --secondary: 219 100% 72%; /* #70a2ff */
+    --secondary-foreground: 217 30% 8%;
+
+    --muted: 217 33% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 20%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 5 83% 69%; /* #f07c72 */
+    --destructive-foreground: 210 40% 98%;
+    
+    --warning: 36 84% 64%; /* #f0b458 */
+
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 163 56% 51%;
+
+    --radius: 1.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    overflow-x: hidden;
+  }
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel {
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.7) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animated gradient text */
+.text-gradient {
+  background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
