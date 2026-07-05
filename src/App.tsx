@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Hero } from './components/sections/Hero'
 import { TrustedBy } from './components/sections/TrustedBy'
 import { ProblemSolution } from './components/sections/ProblemSolution'
@@ -14,14 +14,10 @@ import { FAQ } from './components/sections/FAQ'
 import { FinalCTA } from './components/sections/FinalCTA'
 import { Footer } from './components/sections/Footer'
 import { Button } from './components/ui/Button'
-import { DemoModal } from './components/ui/DemoModal'
 
 function App() {
-  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
-
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden selection:bg-primary/30">
-      <DemoModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0f141c]/70 backdrop-blur-xl border-b border-white/5 h-16 flex items-center">
         <div className="container mx-auto px-4 flex items-center justify-between">
@@ -39,7 +35,7 @@ function App() {
           </div>
           
           <div className="flex items-center gap-4">
-            <Button variant="glass" size="sm" onClick={() => setIsDemoModalOpen(true)}>
+            <Button variant="glass" size="sm" onClick={() => window.location.href = 'https://app.shinkadynamics.com'}>
               Client Log In
             </Button>
           </div>
@@ -47,7 +43,7 @@ function App() {
       </nav>
 
       <main>
-        <Hero onTryItOut={() => setIsDemoModalOpen(true)} />
+        <Hero onTryItOut={() => window.location.href = 'https://app.shinkadynamics.com'} />
         <TrustedBy />
         <ProblemSolution />
         <Solutions />
@@ -59,7 +55,7 @@ function App() {
         {/* <Testimonials /> */}
         {/* <Pricing /> */}
         <FAQ />
-        <FinalCTA onTryItOut={() => setIsDemoModalOpen(true)} />
+        <FinalCTA onTryItOut={() => window.location.href = 'https://app.shinkadynamics.com'} />
       </main>
 
       <Footer />
