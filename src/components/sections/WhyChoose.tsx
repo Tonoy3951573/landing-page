@@ -39,8 +39,11 @@ export function WhyChoose() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full bg-black/40 border-white/5 hover:border-primary/30 transition-colors group">
-                <CardContent className="p-6 space-y-4">
+              <Card className="h-full bg-black/40 border-white/5 hover:border-primary/30 transition-colors group relative overflow-hidden">
+                {/* Glare Hover Effect */}
+                <div className="absolute top-0 -inset-full h-full w-1/2 z-0 transform -skew-x-12 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 translate-x-[-150%] group-hover:translate-x-[300%] transition-transform duration-[1500ms] ease-in-out pointer-events-none" />
+                
+                <CardContent className="p-6 space-y-4 relative z-10">
                   <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <reason.icon className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
                   </div>

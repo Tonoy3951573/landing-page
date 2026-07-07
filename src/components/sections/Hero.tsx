@@ -52,9 +52,13 @@ export function Hero({ onTryItOut }: HeroProps) {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Button variant="gradient" size="lg" className="group" onClick={onTryItOut}>
-            Client Log In
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          <Button variant="gradient" size="lg" className="relative overflow-hidden group w-full sm:w-auto" onClick={onTryItOut}>
+            {/* Shimmer sweep */}
+            <div className="absolute top-0 -inset-full h-full w-1/2 z-0 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 translate-x-[-200%] group-hover:translate-x-[400%] transition-all duration-[1500ms] ease-in-out" />
+            <span className="relative z-10 flex items-center">
+              Client Log In
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </span>
           </Button>
         </motion.div>
 
@@ -63,17 +67,20 @@ export function Hero({ onTryItOut }: HeroProps) {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="mt-20 relative mx-auto max-w-5xl"
+          className="mt-20 relative mx-auto max-w-5xl group p-[1px] rounded-[17px] overflow-hidden"
         >
-          <div className="relative rounded-2xl bg-[#111623] border border-white/10 shadow-2xl overflow-hidden flex flex-col text-left">
+          {/* Animated Magic Border */}
+          <div className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,hsl(var(--primary)/0.5)_0%,hsl(var(--secondary)/0.5)_50%,hsl(var(--primary)/0.5)_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          
+          <div className="relative rounded-2xl bg-[#111623] border border-white/10 group-hover:border-transparent shadow-2xl overflow-hidden flex flex-col text-left transition-colors duration-500">
             {/* Mockup Header */}
             <div className="h-12 border-b border-white/5 flex items-center px-4 gap-2 bg-[#0B0E17]">
-              <div className="flex gap-1.5">
+              <div className="flex gap-1.5 shrink-0">
                 <div className="w-3 h-3 rounded-full bg-red-500/80" />
                 <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                 <div className="w-3 h-3 rounded-full bg-green-500/80" />
               </div>
-              <div className="mx-auto bg-white/5 rounded-md px-32 py-1 border border-white/5 text-xs text-muted-foreground">app.shinkadynamics.com</div>
+              <div className="mx-auto bg-white/5 rounded-md px-4 sm:px-32 py-1 border border-white/5 text-xs text-muted-foreground truncate w-full max-w-[150px] sm:max-w-md text-center">app.shinkadynamics.com</div>
             </div>
             
             {/* Mockup Content - Real App Sync */}

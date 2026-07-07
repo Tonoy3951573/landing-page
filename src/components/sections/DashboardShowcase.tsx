@@ -28,12 +28,12 @@ export function DashboardShowcase() {
         >
           {/* Dashboard Header */}
           <div className="flex items-center px-4 h-12 border-b border-white/5 bg-[#0B0E17] gap-2">
-            <div className="flex gap-1.5">
+            <div className="flex gap-1.5 shrink-0">
               <div className="w-3 h-3 rounded-full bg-red-500/80" />
               <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
               <div className="w-3 h-3 rounded-full bg-green-500/80" />
             </div>
-            <div className="mx-auto bg-white/5 rounded-md px-32 py-1 border border-white/5 text-xs text-muted-foreground">app.shinkadynamics.com</div>
+            <div className="mx-auto bg-white/5 rounded-md px-4 sm:px-32 py-1 border border-white/5 text-xs text-muted-foreground truncate w-full max-w-[150px] sm:max-w-md text-center">app.shinkadynamics.com</div>
           </div>
           
           {/* Dashboard Grid */}

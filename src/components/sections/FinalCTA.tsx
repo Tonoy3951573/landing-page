@@ -20,7 +20,10 @@ export function FinalCTA({ onTryItOut }: FinalCTAProps) {
           viewport={{ once: true }}
           className="glass-panel p-12 md:p-20 rounded-[3rem] border border-white/10 relative overflow-hidden group"
         >
+          {/* Background Glow */}
           <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
+          {/* Glare Hover Effect */}
+          <div className="absolute top-0 -inset-full h-full w-1/2 z-0 transform -skew-x-12 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 translate-x-[-150%] group-hover:translate-x-[300%] transition-transform duration-[1500ms] ease-in-out" />
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6 relative z-10">
             Ready to Make Your Cameras <span className="text-gradient">Smarter?</span>
@@ -30,9 +33,13 @@ export function FinalCTA({ onTryItOut }: FinalCTAProps) {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
-            <Button variant="gradient" size="lg" className="group w-full sm:w-auto text-lg px-8 h-14" onClick={onTryItOut}>
-              Client Log In
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <Button variant="gradient" size="lg" className="relative overflow-hidden group w-full sm:w-auto text-lg px-8 h-14" onClick={onTryItOut}>
+              {/* Shimmer sweep */}
+              <div className="absolute top-0 -inset-full h-full w-1/2 z-0 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 translate-x-[-200%] group-hover:translate-x-[400%] transition-all duration-[1500ms] ease-in-out" />
+              <span className="relative z-10 flex items-center">
+                Client Log In
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </span>
             </Button>
           </div>
         </motion.div>
