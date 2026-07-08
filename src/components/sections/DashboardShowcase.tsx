@@ -37,7 +37,7 @@ export function DashboardShowcase() {
           </div>
           
           {/* Dashboard Grid */}
-          <div className="p-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="p-4 sm:p-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
             
             {/* Left Col - Scoring Model */}
             <div className="bg-[#151B2B] rounded-2xl border border-white/5 p-6 relative">
@@ -111,7 +111,7 @@ export function DashboardShowcase() {
               </div>
 
               {/* Days Row */}
-              <div className="flex justify-between gap-2 mb-6">
+              <div className="flex gap-2 mb-6 overflow-x-auto pb-2 sm:overflow-visible sm:pb-0 sm:justify-between scrollbar-hide">
                 {[
                   { d: "MON", v: "92" }, { d: "TUE", v: "95" }, { d: "WED", v: "94" },
                   { d: "THU", v: "91" }, { d: "FRI", v: "96" }, { d: "SAT", v: "95" }
@@ -127,7 +127,7 @@ export function DashboardShowcase() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-4 mt-auto">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-auto">
                 <div className="p-4 rounded-xl border border-white/5 bg-[#1A2033]">
                   <div className="text-[10px] text-muted-foreground font-bold tracking-wider mb-2">FOCUSED DAY</div>
                   <div className="text-lg font-bold text-white">Sun</div>

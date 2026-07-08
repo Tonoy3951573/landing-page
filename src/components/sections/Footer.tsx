@@ -10,8 +10,8 @@ export function Footer() {
   return (
     <footer className="bg-black py-16 border-t border-white/10">
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
-          <div className="col-span-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 mb-16">
+          <div className="col-span-1 sm:col-span-2">
             <div className="flex items-center gap-2 mb-6">
               <div className="flex items-center justify-center">
                 <img src="/logo.png" alt="Shinka Dynamics Logo" className="h-10 w-auto object-contain" />

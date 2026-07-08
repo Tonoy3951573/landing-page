@@ -31,19 +31,18 @@ export function Hero({ onTryItOut }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-5xl md:text-7xl font-bold tracking-tight mb-8 max-w-5xl mx-auto"
+          className="text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] font-extrabold tracking-tighter mb-6 max-w-5xl mx-auto text-gradient drop-shadow-2xl leading-none pb-2"
         >
-          Team Performance <br className="hidden md:block" />
-          <span className="text-gradient">Excellence Platform</span>
+          X-Manager
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed"
+          className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed font-light"
         >
-          Connect your existing cameras to assess team performance, support employee growth, and foster a culture of service excellence at scale.
+          <span className="text-foreground font-semibold">X-Manager</span> connects with your existing cameras to assess team performance, support employee growth, and foster a culture of service excellence at scale.
         </motion.p>
 
         <motion.div
@@ -84,11 +83,11 @@ export function Hero({ onTryItOut }: HeroProps) {
             </div>
             
             {/* Mockup Content - Real App Sync */}
-            <div className="p-8">
+            <div className="p-4 sm:p-8">
               <div className="text-[10px] font-bold tracking-widest text-muted-foreground uppercase mb-2">Team Performance & Development Platform</div>
               <h2 className="text-3xl font-bold mb-8">Team Performance & Growth<br/>Dashboard</h2>
 
-              <div className="bg-[#151B2B] rounded-2xl border border-white/5 p-8 mb-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+              <div className="bg-[#151B2B] rounded-2xl border border-white/5 p-4 sm:p-8 mb-6 grid grid-cols-1 md:grid-cols-12 gap-8">
                 {/* Left Col */}
                 <div className="md:col-span-5 flex flex-col justify-center">
                   <div className="flex items-center gap-2 mb-4">
@@ -160,7 +159,7 @@ export function Hero({ onTryItOut }: HeroProps) {
               </div>
 
               {/* Bottom 4 Cards */}
-              <div className="grid grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                 {[
                   { label: "Avg. response time", val: "12s", sub: "Ensuring timely customer support" },
                   { label: "Support requests", val: "2", sub: "Assistance actively provided" },
